@@ -89,7 +89,7 @@ form input::-webkit-input-placeholder {
   font-weight: 700;
   font-size: 2rem;
   width: 100%;
-  height: 1.8em;
-  margin-top: 1.5rem;
+  height: 2em;
+  margin-top: 3rem;
 }
 </style>
