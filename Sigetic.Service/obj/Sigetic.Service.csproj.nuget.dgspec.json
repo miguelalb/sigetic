@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\maacevedo\\Desktop\\Projectos\\Sigetic.Service\\Sigetic.Service.csproj": {}
+    "C:\\Users\\maacevedo\\Desktop\\Projectos\\ProyectosDGTIC\\Sigetic.Service\\Sigetic.Service.csproj": {}
   },
   "projects": {
-    "C:\\Users\\maacevedo\\Desktop\\Projectos\\Sigetic.Service\\Sigetic.Service.csproj": {
+    "C:\\Users\\maacevedo\\Desktop\\Projectos\\ProyectosDGTIC\\Sigetic.Service\\Sigetic.Service.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\maacevedo\\Desktop\\Projectos\\Sigetic.Service\\Sigetic.Service.csproj",
+        "projectUniqueName": "C:\\Users\\maacevedo\\Desktop\\Projectos\\ProyectosDGTIC\\Sigetic.Service\\Sigetic.Service.csproj",
         "projectName": "Sigetic.Service",
-        "projectPath": "C:\\Users\\maacevedo\\Desktop\\Projectos\\Sigetic.Service\\Sigetic.Service.csproj",
+        "projectPath": "C:\\Users\\maacevedo\\Desktop\\Projectos\\ProyectosDGTIC\\Sigetic.Service\\Sigetic.Service.csproj",
         "packagesPath": "C:\\Users\\maacevedo\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\maacevedo\\Desktop\\Projectos\\Sigetic.Service\\obj\\",
+        "outputPath": "C:\\Users\\maacevedo\\Desktop\\Projectos\\ProyectosDGTIC\\Sigetic.Service\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\",

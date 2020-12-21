@@ -1542,11 +1542,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\maacevedo\\Desktop\\Projectos\\Sigetic.Domain\\Sigetic.Domain.csproj",
+      "projectUniqueName": "C:\\Users\\maacevedo\\Desktop\\Projectos\\ProyectosDGTIC\\Sigetic.Domain\\Sigetic.Domain.csproj",
       "projectName": "Sigetic.Domain",
-      "projectPath": "C:\\Users\\maacevedo\\Desktop\\Projectos\\Sigetic.Domain\\Sigetic.Domain.csproj",
+      "projectPath": "C:\\Users\\maacevedo\\Desktop\\Projectos\\ProyectosDGTIC\\Sigetic.Domain\\Sigetic.Domain.csproj",
       "packagesPath": "C:\\Users\\maacevedo\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\maacevedo\\Desktop\\Projectos\\Sigetic.Domain\\obj\\",
+      "outputPath": "C:\\Users\\maacevedo\\Desktop\\Projectos\\ProyectosDGTIC\\Sigetic.Domain\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\",

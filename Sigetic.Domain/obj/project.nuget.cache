@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "1uvFTMGfTgSgwWHUjXlm4dcYz3mS2lpY7nlmGFuM24qAgXF2cArI4vzYSwd6Oxd797cYcoUCLM/Cu+Z4R8bdlg==",
+  "dgSpecHash": "zscsYV0dO3IGrbmD3QYlYlvdq3rqk731bbK8iPuQ84aMQ1WYnQw5/LmcfW2XqZrALi0w2O6R4BctgW3pH7QXMg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\maacevedo\\Desktop\\Projectos\\Sigetic.Domain\\Sigetic.Domain.csproj",
+  "projectFilePath": "C:\\Users\\maacevedo\\Desktop\\Projectos\\ProyectosDGTIC\\Sigetic.Domain\\Sigetic.Domain.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\maacevedo\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.1\\microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",
     "C:\\Users\\maacevedo\\.nuget\\packages\\microsoft.bcl.hashcode\\1.1.0\\microsoft.bcl.hashcode.1.1.0.nupkg.sha512",

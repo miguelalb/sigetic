@@ -7,3 +7,12 @@ C:\Users\maacevedo\Desktop\Projectos\Sigetic.Service\bin\Debug\netstandard2.1\Si
 C:\Users\maacevedo\Desktop\Projectos\Sigetic.Service\obj\Debug\netstandard2.1\Sigetic.Service.dll
 C:\Users\maacevedo\Desktop\Projectos\Sigetic.Service\obj\Debug\netstandard2.1\Sigetic.Service.pdb
 C:\Users\maacevedo\Desktop\Projectos\Sigetic.Service\obj\Debug\netstandard2.1\Sigetic.Service.csproj.CoreCompileInputs.cache
+C:\Users\maacevedo\Desktop\Projectos\ProyectosDGTIC\Sigetic.Service\bin\Debug\netstandard2.1\Sigetic.Service.deps.json
+C:\Users\maacevedo\Desktop\Projectos\ProyectosDGTIC\Sigetic.Service\bin\Debug\netstandard2.1\Sigetic.Service.dll
+C:\Users\maacevedo\Desktop\Projectos\ProyectosDGTIC\Sigetic.Service\bin\Debug\netstandard2.1\Sigetic.Service.pdb
+C:\Users\maacevedo\Desktop\Projectos\ProyectosDGTIC\Sigetic.Service\obj\Debug\netstandard2.1\Sigetic.Service.csprojAssemblyReference.cache
+C:\Users\maacevedo\Desktop\Projectos\ProyectosDGTIC\Sigetic.Service\obj\Debug\netstandard2.1\Sigetic.Service.AssemblyInfoInputs.cache
+C:\Users\maacevedo\Desktop\Projectos\ProyectosDGTIC\Sigetic.Service\obj\Debug\netstandard2.1\Sigetic.Service.AssemblyInfo.cs
+C:\Users\maacevedo\Desktop\Projectos\ProyectosDGTIC\Sigetic.Service\obj\Debug\netstandard2.1\Sigetic.Service.csproj.CoreCompileInputs.cache
+C:\Users\maacevedo\Desktop\Projectos\ProyectosDGTIC\Sigetic.Service\obj\Debug\netstandard2.1\Sigetic.Service.dll
+C:\Users\maacevedo\Desktop\Projectos\ProyectosDGTIC\Sigetic.Service\obj\Debug\netstandard2.1\Sigetic.Service.pdb
