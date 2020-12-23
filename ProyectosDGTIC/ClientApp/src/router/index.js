@@ -36,14 +36,20 @@ const routes = [
         path: "/Dashboard",
         name: "Dashboard",
         component: Dashboard,
-        beforeEnter(to, from, next) {
-            let currentUser = JSON.parse(window.localStorage.currentUser);
-            if(currentUser && currentUser.name) {
-                next();
-            } else {
-                next("/");
-            } 
-        }
+        children: [
+            {
+                path: 'Desarrollo'
+               
+            }
+        ]
+        // beforeEnter(to, from, next) {
+        //     let currentUser = JSON.parse(window.localStorage.currentUser);
+        //     if(currentUser && currentUser.name) {
+        //         next();
+        //     } else {
+        //         next("/");
+        //     } 
+        // }
     }
 ];
 

@@ -7,7 +7,9 @@
           <h2>SIGETIC</h2>
         </div>
         <div class="nav-item nav-right">
-             <router-link :to="page">{{ page }}</router-link>
+             <h3>Bienvenido <span id="user">{{ userName }}</span></h3>
+             <img src="../assets/img/UserIcon.png" alt="User Logo" id="user-icon">
+             <a href="#"><i class="fas fa-sign-out-alt"></i></a>
         </div>
       </div>
     </nav>
@@ -17,15 +19,14 @@
 // import EventBus from '../main.js';
 
 export default {
-  name: "NavMenu",
-  props: {
-      page: String,
-  },
+  name: "NavMenuApp",
   data() {
     return {
-      isExpanded: false,
-      isLoggedIn: false,
+      isExpanded: false
     };
+  }, 
+  props: {
+      userName: String,
   },
   methods: {
     collapse() {
@@ -40,6 +41,8 @@ export default {
 </script>
 
 <style scoped>
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css');
+
 .navbar {
   color: #fff;
   background: var(--primary-color);
@@ -60,10 +63,21 @@ export default {
     align-items: center;
     height: 100%;
 }
-.nav-item.nav-left {
+.nav-item.nav-left,
+.nav-item.nav-right {
   display: flex;
   flex-direction: row;
   align-items: center;
+}
+.nav-item.nav-right > * {
+    padding: 0 0.2rem;
+}
+.nav-item.nav-right > img {
+    width: 1.5rem;
+}
+.nav-item.nav-right a {
+  margin-left: 1.3rem;
+  font-size: 1.4rem;
 }
 img.logo {
   width: 5rem;
@@ -71,5 +85,11 @@ img.logo {
 .nav-item.nav-left h2 {
   padding: 2px;
   margin-left: 2px;
+}
+.nav-item.nav-item.nav-right h3 {
+    font-weight: 300;
+}
+#user {
+    font-weight: 600;
 }
 </style>
