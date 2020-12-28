@@ -6,6 +6,7 @@ using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Sigetic.Domain.Models;
+using Sigetic.Service.Entities;
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
@@ -64,9 +65,11 @@ namespace ProyectosDGTIC.Controllers
         [HttpPost("Register")]
         public async Task<IActionResult> RegisterAsync(RegisterModel model)
         {
-            var user = new IdentityUser { 
-                UserName=model.UserName,
-                Email=model.Email
+            var user = new AppUser {
+                UserName = model.UserName,
+                Email = model.Email,
+                FirstName = model.FirstName,
+                LastName = model.LastName
             };
             var result = await _userManager.CreateAsync(user, model.Password);
 

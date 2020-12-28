@@ -10,8 +10,8 @@ using Sigetic.Service.Db;
 namespace Sigetic.Service.Migrations
 {
     [DbContext(typeof(SigeticDbContext))]
-    [Migration("20201215201215_MigracionInicial")]
-    partial class MigracionInicial
+    [Migration("20201228153709_ExpandIdentityDB")]
+    partial class ExpandIdentityDB
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -84,6 +84,10 @@ namespace Sigetic.Service.Migrations
                         .IsConcurrencyToken()
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<string>("Discriminator")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<string>("Email")
                         .HasMaxLength(256)
                         .HasColumnType("nvarchar(256)");
@@ -135,6 +139,8 @@ namespace Sigetic.Service.Migrations
                         .HasFilter("[NormalizedUserName] IS NOT NULL");
 
                     b.ToTable("AspNetUsers");
+
+                    b.HasDiscriminator<string>("Discriminator").HasValue("IdentityUser");
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserClaim<string>", b =>
@@ -215,6 +221,86 @@ namespace Sigetic.Service.Migrations
                     b.HasKey("UserId", "LoginProvider", "Name");
 
                     b.ToTable("AspNetUserTokens");
+                });
+
+            modelBuilder.Entity("Sigetic.Service.Entities.JiraIssue", b =>
+                {
+                    b.Property<string>("Assignee")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<decimal?>("AssigneeId")
+                        .HasColumnType("decimal(18,2)");
+
+                    b.Property<DateTime?>("Created")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("Group")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<decimal?>("GroupId")
+                        .HasColumnType("decimal(18,2)");
+
+                    b.Property<decimal>("IssueId")
+                        .HasColumnType("decimal(18,2)");
+
+                    b.Property<string>("IssueType")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Project")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<decimal?>("ProjectId")
+                        .HasColumnType("decimal(18,2)");
+
+                    b.Property<decimal?>("ProjectTotal")
+                        .HasColumnType("decimal(18,2)");
+
+                    b.Property<string>("ProjectType")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Resolution")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime?>("ResolutionDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("Status")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("StatusId")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Summary")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<decimal?>("TimeEstimate")
+                        .HasColumnType("decimal(18,2)");
+
+                    b.Property<decimal?>("TimeOriginalEstimate")
+                        .HasColumnType("decimal(18,2)");
+
+                    b.Property<string>("TypeId")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Username")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.ToView("JiraIssueView");
+                });
+
+            modelBuilder.Entity("Sigetic.Service.Entities.AppUser", b =>
+                {
+                    b.HasBaseType("Microsoft.AspNetCore.Identity.IdentityUser");
+
+                    b.Property<string>("FirstName")
+                        .HasMaxLength(30)
+                        .HasColumnType("nvarchar(30)");
+
+                    b.Property<string>("LastName")
+                        .HasMaxLength(30)
+                        .HasColumnType("nvarchar(30)");
+
+                    b.HasDiscriminator().HasValue("AppUser");
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>
