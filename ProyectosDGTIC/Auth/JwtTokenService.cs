@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Identity;
 using Microsoft.Extensions.Options;
 using Microsoft.IdentityModel.Tokens;
+using Sigetic.Service.Entities;
 using System;
 using System.Collections.Generic;
 using System.IdentityModel.Tokens.Jwt;
@@ -11,7 +12,7 @@ using System.Threading.Tasks;
 
 namespace ProyectosDGTIC.Auth
 {
-    public class JwtTokenService : IUserTwoFactorTokenProvider<IdentityUser>
+    public class JwtTokenService : IUserTwoFactorTokenProvider<AppUser>
     {
         private readonly RoleManager<IdentityRole> _roleManager;
         private readonly JwtTokenOptions _options;
@@ -25,9 +26,9 @@ namespace ProyectosDGTIC.Auth
             _options = options;
         }
 
-        public virtual async Task<string> GenerateAsync(string purpose, UserManager<IdentityUser> userManager, IdentityUser user)
+        public virtual async Task<string> GenerateAsync(string purpose, UserManager<AppUser> userManager, AppUser user)
         {
-            var currentUser = user as IdentityUser;
+            var currentUser = user as AppUser;
 
             var credencials = new SigningCredentials(
                 new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_options.Key)),
@@ -67,12 +68,12 @@ namespace ProyectosDGTIC.Auth
             return new JwtSecurityTokenHandler().WriteToken(token);
         }
 
-        public Task<bool> ValidateAsync(string purpose, string token, UserManager<IdentityUser> manager, IdentityUser user)
+        public Task<bool> ValidateAsync(string purpose, string token, UserManager<AppUser> manager, AppUser user)
         {
             throw new NotImplementedException();
         }
 
-        public Task<bool> CanGenerateTwoFactorTokenAsync(UserManager<IdentityUser> manager, IdentityUser user)
+        public Task<bool> CanGenerateTwoFactorTokenAsync(UserManager<AppUser> manager, AppUser user)
         {
             return Task.FromResult(false);
         }

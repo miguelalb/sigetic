@@ -17,10 +17,10 @@ namespace ProyectosDGTIC.Controllers
     [ApiController]
     public class AccountController : ControllerBase
     {
-        private readonly SignInManager<IdentityUser> _signInManager;
-        private readonly UserManager<IdentityUser> _userManager;
+        private readonly SignInManager<AppUser> _signInManager;
+        private readonly UserManager<AppUser> _userManager;
         //RoleManager
-        public AccountController(SignInManager<IdentityUser> signInManager, UserManager<IdentityUser> userManager)
+        public AccountController(SignInManager<AppUser> signInManager, UserManager<AppUser> userManager)
         {
             _signInManager = signInManager;
             _userManager = userManager;
@@ -55,8 +55,8 @@ namespace ProyectosDGTIC.Controllers
             }
             var token = await _userManager.GenerateTwoFactorTokenAsync(user, "Bearer");
 
-            return Ok(new { 
-                UserName = user.Email, 
+            return Ok(new {
+                Name = $"{user.FirstName} {user.LastName}",     
                 Token = token });
         }
 

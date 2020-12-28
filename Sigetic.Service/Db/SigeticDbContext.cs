@@ -8,7 +8,7 @@ using System.Text;
 
 namespace Sigetic.Service.Db
 {
-    public class SigeticDbContext : IdentityDbContext<IdentityUser> 
+    public class SigeticDbContext : IdentityDbContext<AppUser> 
     {
         public SigeticDbContext(DbContextOptions<SigeticDbContext> options) : base(options)
         {

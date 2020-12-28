@@ -6,7 +6,7 @@ using System.Text;
 
 namespace Sigetic.Service.Entities
 {
-    [NotMapped]
+    
     public class AppUser : IdentityUser
     {
         public string FirstName { get; set; }

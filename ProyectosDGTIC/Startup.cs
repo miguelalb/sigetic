@@ -12,6 +12,7 @@ using System.Text;
 using VueCliMiddleware;
 using ProyectosDGTIC.Auth;
 using Sigetic.Service;
+using Sigetic.Service.Entities;
 
 namespace ProyectosDGTIC
 {
@@ -31,7 +32,7 @@ namespace ProyectosDGTIC
             services.AddSwaggerGen();
 
             services.AddDbContext<SigeticDbContext>(options => options.UseSqlServer(Configuration.GetConnectionString("Sigetic")));
-            services.AddIdentity<IdentityUser, IdentityRole>(options =>
+            services.AddIdentity<AppUser, IdentityRole>(options =>
             {
                 options.Password.RequireDigit = false;
                 options.Password.RequireLowercase = false;

@@ -10,7 +10,6 @@ C:\Users\maacevedo\Desktop\Projectos\Sigetic.Domain\obj\Debug\netstandard2.0\Sig
 C:\Users\maacevedo\Desktop\Projectos\ProyectosDGTIC\Sigetic.Domain\bin\Debug\netstandard2.0\Sigetic.Domain.deps.json
 C:\Users\maacevedo\Desktop\Projectos\ProyectosDGTIC\Sigetic.Domain\bin\Debug\netstandard2.0\Sigetic.Domain.dll
 C:\Users\maacevedo\Desktop\Projectos\ProyectosDGTIC\Sigetic.Domain\bin\Debug\netstandard2.0\Sigetic.Domain.pdb
-C:\Users\maacevedo\Desktop\Projectos\ProyectosDGTIC\Sigetic.Domain\obj\Debug\netstandard2.0\Sigetic.Domain.csprojAssemblyReference.cache
 C:\Users\maacevedo\Desktop\Projectos\ProyectosDGTIC\Sigetic.Domain\obj\Debug\netstandard2.0\Sigetic.Domain.AssemblyInfoInputs.cache
 C:\Users\maacevedo\Desktop\Projectos\ProyectosDGTIC\Sigetic.Domain\obj\Debug\netstandard2.0\Sigetic.Domain.AssemblyInfo.cs
 C:\Users\maacevedo\Desktop\Projectos\ProyectosDGTIC\Sigetic.Domain\obj\Debug\netstandard2.0\Sigetic.Domain.csproj.CoreCompileInputs.cache
