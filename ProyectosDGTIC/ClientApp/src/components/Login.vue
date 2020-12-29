@@ -2,21 +2,23 @@
   <div id="login">
     <NavMenu page="Register" />
     <div class="card">
-      <form>
+      <form @submit.prevent="login"> 
         <h2 class="form-title">USER LOGIN</h2>
         <div class="form-group">
           <input
-            type="text"
-            id="username"
-            name="username"
-            placeholder="&#61447;"
+            type= "text"
+            id= "username"
+            name= "username"
+            v-model= "input.username"
+            placeholder= "&#61447;"
           />
         </div>
         <div class="form-group">
           <input
-            type="text"
+            type="password"
             id="password"
             name="username"
+            v-model= "input.password"
             placeholder="&#61475;"
           />
         </div>
@@ -24,7 +26,7 @@
           <input type="checkbox" name="rememberme" id="remember-me" />
           <span>Remember Me</span>
         </div>
-        <button class="btn btn-light btn-login">LOGIN</button>
+        <button class="btn btn-light btn-login" type="submit">LOGIN</button>
       </form>
     </div>
   </div>
@@ -32,12 +34,38 @@
 
 <script>
 import NavMenu from "./NavMenu.vue";
+import axios from 'axios';
 
 export default {
   name: "Login",
   components: {
     NavMenu,
   },
+  data() {
+    return {
+      input: {
+        username: '',
+        password: '',
+      },
+      response: null
+    }
+  },
+  methods: {
+    login() {
+      if (this.input.username != "" && this.input.password != "") {
+        axios.post('/api/Account/Login', this.input)
+          .then((response) => {
+            this.response = response.data;
+            console.log(this.response);
+            this.input.username = '';
+            this.input.password = '';
+          })
+          .catch(function (err) {
+            console.log(err);
+          })
+      }
+    }
+  }
 };
 </script>
 
