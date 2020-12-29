@@ -1,8 +1,8 @@
 <template>
   <div id="dashboard">
-    <nav-menu-app userName="Diohani"></nav-menu-app>
+    <nav-menu-app></nav-menu-app>
     <div class="content">
-      <side-menu :menuItems="dgti"></side-menu>
+      <side-menu></side-menu>
       <div class="main">
         <section class="main-top">
           <div class="card-report" id="total-card">
@@ -61,9 +61,6 @@ export default {
   },
   data() {
     return {
-      dgti: [ {class: "far fa-building", menu:"General"}, {class:"fab fa-uncharted", menu: "Desarrollo"}, {class:"fas fa-server", menu:"Infraestructura"},
-      {class:"fas fa-shield-alt", menu:"Seguridad"}, {class:"far fa-file", menu:"Documentacion"}, {class:"fas fa-hands", menu:"ServiciosTI"},
-      {class:"far fa-folder", menu:"ProyectosTI"}],
       total: 45,
       completados: 20,
       restantes: 25,

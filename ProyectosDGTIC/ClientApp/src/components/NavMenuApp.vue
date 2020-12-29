@@ -7,7 +7,7 @@
           <h2>SIGETIC</h2>
         </div>
         <div class="nav-item nav-right">
-             <h3>Bienvenido <span id="user">{{ userName }}</span></h3>
+             <h3>Bienvenido <span id="user">{{ $store.state.userName }}</span></h3>
              <img src="../assets/img/UserIcon.png" alt="User Logo" id="user-icon">
              <a href="#"><i class="fas fa-sign-out-alt"></i></a>
         </div>
@@ -16,17 +16,12 @@
   </header>
 </template>
 <script>
-// import EventBus from '../main.js';
-
 export default {
   name: "NavMenuApp",
   data() {
     return {
       isExpanded: false
     };
-  }, 
-  props: {
-      userName: String,
   },
   methods: {
     collapse() {

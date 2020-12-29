@@ -1,7 +1,7 @@
 <template>
   <div class="sidenav">
           <div class="sidenav-top-content" >
-            <span v-for="(item, index) in menuItems" :key="index">
+            <span v-for="(item, index) in $store.getters.menuItems" :key="index">
               <a href="#" :class="{ active: selected == index }" @click="selected = index"><i :class="item.class"></i> {{ item.menu }}</a>
             </span>
           </div>
@@ -20,10 +20,6 @@ export default {
       selected: 0,
     };
     },
-    props: {
-      menuItems: Object
-    }
-    ,
     methods: {
       // selected: function() {
       //   this.isActive = !this.isActive;
@@ -65,11 +61,11 @@ export default {
     padding: 2px;
     font-size: 1.2rem;
 }
-.sidenav-top-content > *:hover,
+.sidenav-top-content span > *:hover,
 .active {
     border-bottom: 2px solid var(--secondary-color);
 }
-.sidenav-top-content > *:hover i,
+.sidenav-top-content span > *:hover i,
 .active i {
     color: var(--secondary-color);
 }
