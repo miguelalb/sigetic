@@ -8,7 +8,7 @@
           <div class="card-report" id="total-card">
             <div class="card-top">
               <h3>TOTAL</h3>
-              <h4>{{ completados }} <span class="light">COMPLETADOS</span></h4>
+              <h4>{{ completados }} <span class="light">CERRADOS</span></h4>
             </div>
             <div class="card-bottom">
               <h1>{{ total }}</h1>
@@ -16,8 +16,8 @@
           </div>
           <div class="card-report" id="restantes-card">
             <div class="card-top">
-              <h3>RESTANTES</h3>
-              <h4>{{ todo }} <span class="light">TODO</span></h4>
+              <h3>ABIERTOS</h3>
+              <h4>{{ todo }} <span class="light">VENCIDOS</span></h4>
             </div>
             <div class="card-bottom">
               <h1>{{ restantes }}</h1>
@@ -25,7 +25,7 @@
           </div>
           <div class="card-report" id="p50-card">
             <div class="card-top">
-              <h3>PROGRESO 50%</h3>              
+              <h3>ATRASADOS</h3>              
             </div>
             <div class="card-bottom">
               <h1>{{ p50 }}</h1>
@@ -33,7 +33,7 @@
           </div>
           <div class="card-report" id="p75-card">
             <div class="card-top">
-              <h3>PROGRESO 75%</h3>
+              <h3>A TIEMPO</h3>
             </div>
             <div class="card-bottom">
               <h1>{{ p75 }}</h1>
