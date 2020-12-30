@@ -10,8 +10,8 @@ using Sigetic.Service.Db;
 namespace Sigetic.Service.Migrations
 {
     [DbContext(typeof(SigeticDbContext))]
-    [Migration("20201228201331_MigracionInicial")]
-    partial class MigracionInicial
+    [Migration("20201230020351_InitialMigrationHomeDB")]
+    partial class InitialMigrationHomeDB
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {

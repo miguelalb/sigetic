@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace Sigetic.Service.Migrations
 {
-    public partial class MigracionInicial : Migration
+    public partial class InitialMigrationHomeDB : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {

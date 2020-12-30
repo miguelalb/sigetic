@@ -31,7 +31,7 @@ namespace ProyectosDGTIC
             services.AddControllers().AddNewtonsoftJson();
             services.AddSwaggerGen();
 
-            services.AddDbContext<SigeticDbContext>(options => options.UseSqlServer(Configuration.GetConnectionString("Sigetic")));
+            services.AddDbContext<SigeticDbContext>(options => options.UseSqlServer(Configuration.GetConnectionString("Local")));
             services.AddIdentity<AppUser, IdentityRole>(options =>
             {
                 options.Password.RequireDigit = false;
