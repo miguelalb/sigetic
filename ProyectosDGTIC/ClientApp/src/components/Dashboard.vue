@@ -8,19 +8,19 @@
           <div class="card-report" id="total-card">
             <div class="card-top">
               <h3>TOTAL</h3>
-              <h4>{{ completados }} <span class="light">CERRADOS</span></h4>
+              <h4>{{ $store.getters.resumen.cerrados }} <span class="light">CERRADOS</span></h4>
             </div>
             <div class="card-bottom">
-              <h1>{{ total }}</h1>
+              <h1>{{ $store.getters.resumen.total }}</h1>
             </div>
           </div>
           <div class="card-report" id="restantes-card">
             <div class="card-top">
               <h3>ABIERTOS</h3>
-              <h4>{{ todo }} <span class="light">VENCIDOS</span></h4>
+              <h4>{{ $store.getters.resumen.vencidos }} <span class="light">VENCIDOS</span></h4>
             </div>
             <div class="card-bottom">
-              <h1>{{ restantes }}</h1>
+              <h1>{{ $store.getters.resumen.abiertos }}</h1>
             </div>
           </div>
           <div class="card-report" id="p50-card">
@@ -28,7 +28,7 @@
               <h3>ATRASADOS</h3>              
             </div>
             <div class="card-bottom">
-              <h1>{{ p50 }}</h1>
+              <h1>{{ $store.getters.resumen.atrasados }}</h1>
             </div>
           </div>
           <div class="card-report" id="p75-card">
@@ -36,13 +36,21 @@
               <h3>A TIEMPO</h3>
             </div>
             <div class="card-bottom">
-              <h1>{{ p75 }}</h1>
+              <h1>{{ $store.getters.resumen.aTiempo }}</h1>
             </div>
           </div>
         </section>
         <section class="main-bottom">
           <h2>Detalle</h2>
-          <div class="table"></div>
+          <div class="table">
+            <v-data-table
+            dense
+            :headers="$store.getters.dashboardTable.headers"
+            :items="$store.getters.dashboardTable.items"
+            item-key="id"
+            class="elevation-1"
+            ></v-data-table>
+          </div>
         </section>
       </div>
     </div>
@@ -61,12 +69,7 @@ export default {
   },
   data() {
     return {
-      total: 45,
-      completados: 20,
-      restantes: 25,
-      todo: 2,
-      p50: 10,
-      p75: 13,
+      
     };
   },
 };
@@ -153,7 +156,7 @@ export default {
 }
 .main-bottom .table {
   width: 95%;
-  height: 50%;
-  background-color: #c4c4c4;
+  height: 60%;
+  /* background-color: #c4c4c4; */
 }
 </style>
