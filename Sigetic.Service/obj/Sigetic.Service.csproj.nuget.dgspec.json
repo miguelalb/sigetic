@@ -1,24 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\maacevedo\\Desktop\\Projectos\\ProyectosDGTIC\\Sigetic.Service\\Sigetic.Service.csproj": {}
+    "C:\\Users\\macevedo\\Desktop\\MOPC\\sigetic\\Sigetic.Service\\Sigetic.Service.csproj": {}
   },
   "projects": {
-    "C:\\Users\\maacevedo\\Desktop\\Projectos\\ProyectosDGTIC\\Sigetic.Service\\Sigetic.Service.csproj": {
+    "C:\\Users\\macevedo\\Desktop\\MOPC\\sigetic\\Sigetic.Service\\Sigetic.Service.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\maacevedo\\Desktop\\Projectos\\ProyectosDGTIC\\Sigetic.Service\\Sigetic.Service.csproj",
+        "projectUniqueName": "C:\\Users\\macevedo\\Desktop\\MOPC\\sigetic\\Sigetic.Service\\Sigetic.Service.csproj",
         "projectName": "Sigetic.Service",
-        "projectPath": "C:\\Users\\maacevedo\\Desktop\\Projectos\\ProyectosDGTIC\\Sigetic.Service\\Sigetic.Service.csproj",
-        "packagesPath": "C:\\Users\\maacevedo\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\maacevedo\\Desktop\\Projectos\\ProyectosDGTIC\\Sigetic.Service\\obj\\",
+        "projectPath": "C:\\Users\\macevedo\\Desktop\\MOPC\\sigetic\\Sigetic.Service\\Sigetic.Service.csproj",
+        "packagesPath": "C:\\Users\\macevedo\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\macevedo\\Desktop\\MOPC\\sigetic\\Sigetic.Service\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Microsoft\\Xamarin\\NuGet\\",
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+          "C:\\Microsoft\\Xamarin\\NuGet\\"
         ],
         "configFilePaths": [
-          "C:\\Users\\maacevedo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\macevedo\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
@@ -31,7 +30,6 @@
         },
         "frameworks": {
           "netstandard2.1": {
-            "targetAlias": "netstandard2.1",
             "projectReferences": {}
           }
         },
@@ -43,7 +41,6 @@
       },
       "frameworks": {
         "netstandard2.1": {
-          "targetAlias": "netstandard2.1",
           "dependencies": {
             "Desyco.Filters": {
               "target": "Package",
@@ -83,7 +80,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.403\\RuntimeIdentifierGraph.json"
         }
       }
     }

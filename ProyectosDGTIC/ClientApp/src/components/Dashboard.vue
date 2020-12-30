@@ -79,11 +79,13 @@ export default {
 .content {
   display: flex;
   height: 100vh;
+  width: 100vw;
 }
 .main {
   display: flex;
   flex-direction: column;
   padding: 2rem 1rem;
+  width: 85%;
 }
 
 .main-top {

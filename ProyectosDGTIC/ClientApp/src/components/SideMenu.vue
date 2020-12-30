@@ -39,7 +39,7 @@ export default {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  width: 250px;
+  width: 15%;
   background-color: rgba(255, 255, 255, 0.25);
   padding-top: 2rem;
   height: 100%;
