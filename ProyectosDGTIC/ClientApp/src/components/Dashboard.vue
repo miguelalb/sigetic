@@ -41,6 +41,11 @@
           </div>
         </section>
         <section class="main-bottom">
+          <div class="charts">
+            <JSCharting :options="$store.getters.chartOptions[0]" class="columnChart"></JSCharting>
+            <JSCharting :options="$store.getters.chartOptions[1]" class="columnChart"></JSCharting>
+            <JSCharting :options="$store.getters.chartOptions[2]" class="columnChart"></JSCharting>
+          </div>
           <h2>Detalle</h2>
           <div class="table">
             <v-data-table
@@ -60,12 +65,14 @@
 <script>
 import NavMenuApp from "./NavMenuApp.vue";
 import SideMenu from "./SideMenu.vue";
+import JSCharting from 'jscharting-vue';
 
 export default {
   name: "Dashboard",
   components: {
     NavMenuApp,
     SideMenu,
+    JSCharting
   },
   data() {
     return {
@@ -99,8 +106,8 @@ export default {
 }
 
 .card-report {
-  width: 18rem;
-  height: 11rem;
+  width: 15rem;
+  height: 8rem;
   border-radius: 15px;
   background-color: #c4c4c4;
   margin-right: 1.5rem;
@@ -115,10 +122,10 @@ export default {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  font-size: 17px;
+  font-size: 14px;
 }
 .card-report .card-bottom {
-  font-size: 36px;
+  font-size: 22px;
   font-weight: 800;
 }
 
@@ -158,5 +165,18 @@ export default {
   width: 95%;
   height: 60%;
   /* background-color: #c4c4c4; */
+}
+
+.charts {
+  width: 100%;
+  height: 30%; 
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 1rem 0;
+}
+.columnChart {
+    height: 100%;
+    width: 24%;
 }
 </style>

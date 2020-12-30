@@ -1,23 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\macevedo\\Desktop\\MOPC\\sigetic\\Sigetic.Domain\\Sigetic.Domain.csproj": {}
+    "C:\\Users\\maacevedo\\Desktop\\Projectos\\sigetic\\Sigetic.Domain\\Sigetic.Domain.csproj": {}
   },
   "projects": {
-    "C:\\Users\\macevedo\\Desktop\\MOPC\\sigetic\\Sigetic.Domain\\Sigetic.Domain.csproj": {
+    "C:\\Users\\maacevedo\\Desktop\\Projectos\\sigetic\\Sigetic.Domain\\Sigetic.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\macevedo\\Desktop\\MOPC\\sigetic\\Sigetic.Domain\\Sigetic.Domain.csproj",
+        "projectUniqueName": "C:\\Users\\maacevedo\\Desktop\\Projectos\\sigetic\\Sigetic.Domain\\Sigetic.Domain.csproj",
         "projectName": "Sigetic.Domain",
-        "projectPath": "C:\\Users\\macevedo\\Desktop\\MOPC\\sigetic\\Sigetic.Domain\\Sigetic.Domain.csproj",
-        "packagesPath": "C:\\Users\\macevedo\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\macevedo\\Desktop\\MOPC\\sigetic\\Sigetic.Domain\\obj\\",
+        "projectPath": "C:\\Users\\maacevedo\\Desktop\\Projectos\\sigetic\\Sigetic.Domain\\Sigetic.Domain.csproj",
+        "packagesPath": "C:\\Users\\maacevedo\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\maacevedo\\Desktop\\Projectos\\sigetic\\Sigetic.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Microsoft\\Xamarin\\NuGet\\"
+          "C:\\Microsoft\\Xamarin\\NuGet\\",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\macevedo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\maacevedo\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
@@ -30,6 +31,7 @@
         },
         "frameworks": {
           "netstandard2.0": {
+            "targetAlias": "netstandard2.0",
             "projectReferences": {}
           }
         },
@@ -41,6 +43,7 @@
       },
       "frameworks": {
         "netstandard2.0": {
+          "targetAlias": "netstandard2.0",
           "dependencies": {
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
@@ -67,7 +70,7 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.403\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.101\\RuntimeIdentifierGraph.json"
         }
       }
     }

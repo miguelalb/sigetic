@@ -9,7 +9,8 @@ export default new Vuex.Store({
     menuItems: [{ class: "far fa-building", menu: "General" }, { class: "fab fa-uncharted", menu: "Desarrollo" }, { class: "fas fa-server", menu: "Infraestructura" },
     { class: "fas fa-shield-alt", menu: "Seguridad" }, { class: "far fa-file", menu: "Documentacion" }, { class: "fas fa-hands", menu: "ServiciosTI" },
     { class: "far fa-folder", menu: "ProyectosTI" }],
-    resumen: {total: 45, cerrados: 20, vencidos: 2, abiertos: 25, atrasados: 10, aTiempo: 13},
+    resumen: {total: 50, cerrados: 20, vencidos: 2, abiertos: 25, atrasados: 10, aTiempo: 13},
+    chartTypes: { type1: 'pie donut', type2: 'gauge' },
     dashboardTable: {
         headers: [
           {
@@ -74,6 +75,46 @@ export default new Vuex.Store({
     },
     dashboardTable(state) {
       return state.dashboardTable;
+    },
+    chartOptions(state){
+      const options = [
+        {
+          type: 'pyramid',
+          palette: 'rainforest',
+          title_label_text: 'Detalle Gráfico',
+          series: [{
+            points: [
+              { x: 'Vencidos', y: state.resumen.vencidos },
+              { x: 'Abiertos', y: state.resumen.abiertos },
+              { x: 'Atrasados', y: state.resumen.atrasados },
+              { x: 'A tiempo', y: state.resumen.aTiempo }
+            ]
+          }]
+        }, 
+        {
+          type: 'pie donut',
+          palette: 'fiveColor28',
+          title_label_text: 'Abiertos vs Vencidos',
+          series: [{
+            points: [
+              { x: 'Vencidos', y: state.resumen.vencidos },
+              { x: 'Abiertos', y: state.resumen.abiertos }
+            ]
+          }]
+        },
+        {
+          type: 'pie donut',
+          palette: 'fiveColor21',
+          title_label_text: 'Atrasados vs A Tiempo',
+          series: [{
+            points: [
+              { x: 'Atrasados', y: state.resumen.atrasados },
+              { x: 'A tiempo', y: state.resumen.aTiempo }
+            ]
+          }]
+        },
+      ];
+      return options
     }
   }
 })

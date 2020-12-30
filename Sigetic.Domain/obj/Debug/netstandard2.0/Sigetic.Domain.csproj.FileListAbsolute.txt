@@ -24,3 +24,12 @@ C:\Users\macevedo\Desktop\MOPC\sigetic\Sigetic.Domain\obj\Debug\netstandard2.0\S
 C:\Users\macevedo\Desktop\MOPC\sigetic\Sigetic.Domain\obj\Debug\netstandard2.0\Sigetic.Domain.csproj.CoreCompileInputs.cache
 C:\Users\macevedo\Desktop\MOPC\sigetic\Sigetic.Domain\obj\Debug\netstandard2.0\Sigetic.Domain.dll
 C:\Users\macevedo\Desktop\MOPC\sigetic\Sigetic.Domain\obj\Debug\netstandard2.0\Sigetic.Domain.pdb
+C:\Users\maacevedo\Desktop\Projectos\sigetic\Sigetic.Domain\bin\Debug\netstandard2.0\Sigetic.Domain.deps.json
+C:\Users\maacevedo\Desktop\Projectos\sigetic\Sigetic.Domain\bin\Debug\netstandard2.0\Sigetic.Domain.dll
+C:\Users\maacevedo\Desktop\Projectos\sigetic\Sigetic.Domain\bin\Debug\netstandard2.0\Sigetic.Domain.pdb
+C:\Users\maacevedo\Desktop\Projectos\sigetic\Sigetic.Domain\obj\Debug\netstandard2.0\Sigetic.Domain.csprojAssemblyReference.cache
+C:\Users\maacevedo\Desktop\Projectos\sigetic\Sigetic.Domain\obj\Debug\netstandard2.0\Sigetic.Domain.AssemblyInfoInputs.cache
+C:\Users\maacevedo\Desktop\Projectos\sigetic\Sigetic.Domain\obj\Debug\netstandard2.0\Sigetic.Domain.AssemblyInfo.cs
+C:\Users\maacevedo\Desktop\Projectos\sigetic\Sigetic.Domain\obj\Debug\netstandard2.0\Sigetic.Domain.csproj.CoreCompileInputs.cache
+C:\Users\maacevedo\Desktop\Projectos\sigetic\Sigetic.Domain\obj\Debug\netstandard2.0\Sigetic.Domain.dll
+C:\Users\maacevedo\Desktop\Projectos\sigetic\Sigetic.Domain\obj\Debug\netstandard2.0\Sigetic.Domain.pdb
