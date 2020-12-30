@@ -70,7 +70,7 @@ export default {
     color: var(--secondary-color);
 }
 .sidenav-bottom-content img {
-  /* width: 10rem; */
+  width: 12rem;
   margin-bottom: 4rem;
 }
 </style>
